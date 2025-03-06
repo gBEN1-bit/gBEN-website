@@ -100,6 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #1e252d;
+	
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2636,6 +2637,7 @@ input, select, textarea {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
+			
 		}
 
 			.image.main:first-child {
@@ -4686,4 +4688,39 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+		
+
 	}
+
+	/* Centers everything */
+.profile-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Outer container for the circular image */
+.avatar-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circle background container */
+.avatar-title {
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Circular image inside the container */
+.profile-pic {
+    width: 100px; /* Slightly smaller than container */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures proper cropping */
+}
